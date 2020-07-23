@@ -1,0 +1,46 @@
+{
+  "private": true,
+  "name": "base16-shades-of-purple",
+  "description": "Base16 color scheme based on Shades of Purple theme",
+  "version": "0.1.0",
+  "author": {
+    "name": "Iolar Demartini Junior",
+    "email": "iolardemartini@gmail.com",
+    "url": "https://demartini.dev"
+  },
+  "contributors": [
+    {
+      "name": "Shades of Purple for Base16 Contributors",
+      "url": "https://github.com/demartini/base16-shades-of-purple/graphs/contributors"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/demartini/base16-shades-of-purple.git"
+  },
+  "keywords": [
+    "shades of purple",
+    "base16",
+    "theme",
+    "purple"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/demartini/base16-shades-of-purple/issues"
+  },
+  "homepage": "https://github.com/demartini/base16-shades-of-purple#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^9.1.1",
+    "@commitlint/config-conventional": "^9.1.1",
+    "husky": "^4.2.5",
+    "standard-version": "^8.0.2"
+  },
+  "scripts": {
+    "release": "standard-version"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
